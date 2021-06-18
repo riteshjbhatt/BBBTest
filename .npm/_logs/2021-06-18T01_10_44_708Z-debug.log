@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 warn npm npm does not support Node.js v10.24.0
+2 warn npm You should probably upgrade to a newer version of node as we
+3 warn npm can't make any promises that npm will work with this version.
+4 warn npm Supported releases of Node.js are the latest release of 4, 6, 7, 8, 9.
+5 warn npm You can find the latest version at https://nodejs.org/
+6 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'outdated' ]
+7 info using npm@5.8.0
+8 info using node@v10.24.0
+9 silly mapToRegistry name bonescript
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data { type: 'tag',
+12 silly mapToRegistry   registry: true,
+12 silly mapToRegistry   where: undefined,
+12 silly mapToRegistry   raw: 'bonescript',
+12 silly mapToRegistry   name: 'bonescript',
+12 silly mapToRegistry   escapedName: 'bonescript',
+12 silly mapToRegistry   scope: undefined,
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   saveSpec: null,
+12 silly mapToRegistry   fetchSpec: 'latest',
+12 silly mapToRegistry   gitRange: undefined,
+12 silly mapToRegistry   gitCommittish: undefined,
+12 silly mapToRegistry   hosted: undefined }
+13 silly mapToRegistry uri https://registry.npmjs.org/bonescript
+14 verbose request uri https://registry.npmjs.org/bonescript
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 9:09:33 PM
+17 verbose request id 58f3b1e77a97ca27
+18 http request GET https://registry.npmjs.org/bonescript
+19 silly mapToRegistry name node-red-contrib-moment
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data { type: 'tag',
+22 silly mapToRegistry   registry: true,
+22 silly mapToRegistry   where: undefined,
+22 silly mapToRegistry   raw: 'node-red-contrib-moment',
+22 silly mapToRegistry   name: 'node-red-contrib-moment',
+22 silly mapToRegistry   escapedName: 'node-red-contrib-moment',
+22 silly mapToRegistry   scope: undefined,
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   saveSpec: null,
+22 silly mapToRegistry   fetchSpec: 'latest',
+22 silly mapToRegistry   gitRange: undefined,
+22 silly mapToRegistry   gitCommittish: undefined,
+22 silly mapToRegistry   hosted: undefined }
+23 silly mapToRegistry uri https://registry.npmjs.org/node-red-contrib-moment
+24 verbose request uri https://registry.npmjs.org/node-red-contrib-moment
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 9:09:34 PM
+27 http request GET https://registry.npmjs.org/node-red-contrib-moment
+28 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+29 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+30 info attempt registry request try #2 at 9:09:44 PM
+31 http request GET https://registry.npmjs.org/bonescript
+32 info attempt registry request try #2 at 9:09:44 PM
+33 http request GET https://registry.npmjs.org/node-red-contrib-moment
+34 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+35 info retry will retry, error on last attempt: Error: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+36 info attempt registry request try #3 at 9:10:44 PM
+37 http request GET https://registry.npmjs.org/bonescript
+38 info attempt registry request try #3 at 9:10:44 PM
+39 http request GET https://registry.npmjs.org/node-red-contrib-moment
+40 verbose stack Error: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+40 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+41 verbose cwd /var/lib/node-red/.node-red
+42 verbose Linux 4.19.94-ti-r42
+43 verbose argv "/usr/bin/node" "/usr/bin/npm" "outdated"
+44 verbose node v10.24.0
+45 verbose npm  v5.8.0
+46 error code EAI_AGAIN
+47 error errno EAI_AGAIN
+48 error syscall getaddrinfo
+49 error getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+50 verbose exit [ 1, true ]
