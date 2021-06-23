@@ -1,0 +1,16 @@
+#Files to ignore
+ADCsTimed
+ReadingTwoADCChannels
+helloWorld
+output2.0
+output2.1
+
+.bash_logout
+.bash_history
+.bashrc
+.c9
+.local
+.npm
+.profile
+.viminfo
+.xsessionrc
