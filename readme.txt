@@ -1,1 +1,1 @@
-Back up C script and measurement files
+Back up files stored on BBB
