@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import scipy.linalg as la
 import math
 import json
@@ -7,7 +7,7 @@ import scipy.signal
 import sys
 
 
-def frf(x, f, dt, nseg,plot_frequency):
+def frf(x, f, dt, nseg):
     # Compute the power density spectrums and the cross spectral density
     SXX = scipy.signal.welch(x, 1/dt,nperseg=nseg,noverlap=0)
     #SFF = scipy.signal.welch(f, 1/dt)
@@ -29,26 +29,17 @@ def frf(x, f, dt, nseg,plot_frequency):
 
     # Compute the coherence
     __, coh = scipy.signal.coherence(x, f, 1/dt,nperseg=nseg,noverlap=0)
-    #
-    abs_diff = lambda list_value: abs(list_value-plot_frequency)
-    index_frequency=freq.index(min(freq,key=abs_diff))
-    plt_freq=freq[0:index_frequency]
-    plt_mag=mag[0:index_frequency]
-    plt_ang=ang[0:index_frequency]
-    plt_coh=coh[0:index_frequency]
-
     
-    return freq, mag, ang, coh, real, imag, plt_freq, plt_mag, plt_ang, plt_coh
-# First argument: sampling frequency [Hz]; Second argument: segment width [-]; Third argument: max plot frequenxy [Hz]
+    return freq, mag, ang, coh, real, imag
+# First argument: sampling frequency [Hz]; Second argument: segment width [-]
 sampling_frequency=int(sys.argv[1])
 segment_width=int(sys.argv[2])
 dt=1/sampling_frequency
-plot_frequency=int(sys.argv[3])
 
 ###Reading force data
 #On BBB
-#forceFilepath = '/home/debian/frfRawData/force.txt'
-forceFilepath='/var/lib/node-red/frfRawData/force.txt'
+forceFilepath = '/home/debian/frfRawData/force.txt'
+#forceFilepath='/var/lib/node-red/frfRawData/force.txt'
 #forceFilepath='F:\\Clouddienste\\OneDrive - bwedu\\Uni\\Georgia Tech\\GRA\\SoftwareDevelopmentFabian\\Ford FRF\\Messungen\\force.txt'
 forceSignal = []
 with open(forceFilepath) as f:
@@ -60,8 +51,8 @@ for i in range(0, len(forceSignal), 1):
     time.append(i*dt)
 ###Reading displacement data
 #On BBB
-#displacementFilepath = '/home/debian/frfRawData/displacement.txt'
-displacementFilepath='/var/lib/node-red/frfRawData/displacement.txt'
+displacementFilepath = '/home/debian/frfRawData/position.txt'
+#displacementFilepath='/var/lib/node-red/frfRawData/displacement.txt'
 #displacementFilepath='F:\\Clouddienste\\OneDrive - bwedu\\Uni\\Georgia Tech\\GRA\\SoftwareDevelopmentFabian\\Ford FRF\\Messungen\\position.txt'
 displacementSignal = []
 with open(displacementFilepath) as f:
@@ -76,12 +67,11 @@ if end_index>=len(forceSignal):
     end_index=len(forceSignal)-1
 if start_index<0:
     start_index=0
-print('start: '+str(start_index))
-print('end: '+str(end_index))
-
+print('start: '+ str(start_index))
+print('end: '+ str(end_index))
 # Computing FRF
-freq, mag, ang, coh, real, imag, plt_freq, plt_mag, plt_ang, plt_coh = frf(displacementSignal[start_index:end_index], forceSignal[start_index:end_index], dt,segment_width,plot_frequency)
-print('plot freqeuncy: '+str(plt_freq))
+freq, mag, ang, coh, real, imag = frf(displacementSignal[start_index:end_index], forceSignal[start_index:end_index], dt,segment_width)
+
 # Converte output to list for creating json file
 freq = list(freq)
 mag = list(mag)
@@ -89,10 +79,6 @@ ang = list(ang)
 coh = list(coh)
 real = list(real)
 imag = list(imag)
-plt_freq = list(plt_freq)
-plt_mag = list(plt_mag)
-plt_ang = list(plt_ang)
-plt_coh = list(plt_coh)
 
 
 # Define output file 
@@ -102,11 +88,7 @@ jsonFile = {
     "angle": ang,
     "coh": coh,
     "real": real,
-    "imag": imag,
-    "plt_freq": plt_freq,
-    "plt_mag": plt_mag,
-    "plt_ang": plt_ang,
-    "plt_coh": plt_coh
+    "imag": imag
 }
 
 #Test on laptop
@@ -114,7 +96,7 @@ jsonFile = {
 
 
 #On BBB
-saveDataFilepath = '/var/lib/node-red/frfRawData/frf.txt'
+saveDataFilepath = '/home/debian/frfRawData/frf.txt'
 f = open(saveDataFilepath, "w")
 f.write(str(jsonFile))
 f.close()
