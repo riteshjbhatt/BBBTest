@@ -1,0 +1,168 @@
+[33mcommit b613c5a81b95988f085ef02d6031eb4a61c3e5ff[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Sun Aug 1 16:35:39 2021 -0400
+
+    Add measurement files
+
+[33mcommit a82cd0c6185dfdcca8e3a8d4cb1a044d626b96f4[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Fri Jul 2 18:25:39 2021 -0400
+
+    New Measurements
+
+[33mcommit 4c7cfbacbfc2e3eed566759417cf42519ce116dc[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Tue Jun 29 18:21:31 2021 -0400
+
+    clean NR Backups
+
+[33mcommit c58a1d9b40bea8b27959bb34c7b89c82e6facfa5[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Tue Jun 29 18:14:14 2021 -0400
+
+    Update NR
+
+[33mcommit 7ac542877e1b875c232e2cc1a02a627470bbb7ab[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Tue Jun 29 16:50:19 2021 -0400
+
+    Add Python Script
+
+[33mcommit 234e0638fced165af343b92b67f0bc40b6ff4811[m
+Author: Ritesh Bhatt <riteshjbhatt@gatech.edu>
+Date:   Tue Jun 29 15:29:22 2021 -0400
+
+    Create frf_beaglebone.py
+
+[33mcommit c860a9a444caea5956f41ed8af12f21db5d1d611[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Fri Jun 25 17:44:52 2021 -0400
+
+    measurements
+
+[33mcommit 09528684c1140a168d2c2ee031d7d0b481b683bd[m
+Author: Ritesh Bhatt <riteshjbhatt@gatech.edu>
+Date:   Fri Jun 25 16:44:57 2021 -0400
+
+    add timestamp
+
+[33mcommit c5f862bb51700b534bf9fb6448a4629386a7abd7[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Fri Jun 25 16:39:52 2021 -0400
+
+    add data dir
+
+[33mcommit 44d804b773661316b63034ab0daac29485689c34[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Fri Jun 25 16:35:29 2021 -0400
+
+    clean meas folder
+
+[33mcommit eee3c80fdb6dc43287ff9a70c9d7ea432a820399[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Fri Jun 25 16:32:58 2021 -0400
+
+    remove test files
+
+[33mcommit 583b039026158cd9939f1851c65bf0d61ed8ea95[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Fri Jun 25 16:29:46 2021 -0400
+
+    Add meas files
+
+[33mcommit b477a4d08daa673f4545977e1d5747f0b2f9b4ae[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Fri Jun 25 16:18:23 2021 -0400
+
+    Edit Node-RED Flow
+
+[33mcommit 32bb7286955dee643ec0c690ac1f1dbf811e11f6[m
+Author: Ritesh Bhatt <riteshjbhatt@gatech.edu>
+Date:   Fri Jun 25 15:57:55 2021 -0400
+
+    Update readme.txt
+
+[33mcommit 9708ce4b56e77ed7465d3114cd0209ba2c182d44[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Wed Jun 23 16:45:13 2021 -0400
+
+    Add old NR flow
+
+[33mcommit 2d0fd441f239a2b767913c25c37789180636c3fa[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Wed Jun 23 16:39:48 2021 -0400
+
+    clean unecessary files
+
+[33mcommit 6db78e478a7fe5967b15831fc409595b5ad49b39[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Wed Jun 23 16:31:59 2021 -0400
+
+    add gitignore, update meas
+
+[33mcommit 1c2ddf1f3659faa9e9ca91eb2fd0a3f2a8dd6a28[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Wed Jun 23 15:10:48 2021 -0400
+
+    Remove compiled code
+
+[33mcommit 18c213335ac41334d30d6c800bffc091280919c5[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Tue Jun 22 18:43:23 2021 -0400
+
+    Add measurements
+
+[33mcommit fab1226de616e2b7276f657d2cad46d4d093f18e[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Tue Jun 22 16:07:22 2021 -0400
+
+    Add NodeRed Backups
+
+[33mcommit bf571d2f083aded0d460d9b70e9bb40b16d178f9[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Mon Jun 21 17:59:59 2021 -0400
+
+    NodeRed Backups
+
+[33mcommit 3a941a439a37efd64e4912f5d7486c6c12b755b4[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Mon Jun 21 17:22:22 2021 -0400
+
+    NodeRed Backup Folder
+
+[33mcommit 1503c250f5e57d044188bb80f1936ac31daa2049[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Thu Jun 17 21:38:55 2021 -0400
+
+    Add all files in /home/debian
+
+[33mcommit 7e1cecabc09ec633ae82b22caab1aa0ad0470c7c[m
+Merge: 57546d1 b386457
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Thu Jun 17 18:49:16 2021 -0400
+
+    Merge branch 'master' of https://github.com/riteshjbhatt/BBBTest
+
+[33mcommit 57546d1f0e1e0d292ec1424f0d8c62a7993205b2[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Thu Jun 17 15:49:38 2021 -0400
+
+    Backup NodeRed Flow 6/17/21
+
+[33mcommit b386457c3f997ef17a390d5721a932a4ac84f1d1[m
+Author: riteshjbhatt <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Thu Jun 17 14:57:44 2021 -0400
+
+    Update readme.txt
+
+[33mcommit d72fe61c297af2b9e391f99a349814633aa42b2a[m
+Author: BeagleBone <72875877+riteshjbhatt@users.noreply.github.com>
+Date:   Thu Jun 17 14:54:03 2021 -0400
+
+    Add frfRawData
+
+[33mcommit 77863f92e8c7b8d5a0dd476ff2635f4f7bddedad[m
+Author: BeagleBone <riteshjbhatt@gatech.edu>
+Date:   Wed Jun 9 15:07:40 2021 -0400
+
+    Add BBB files
